@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  color: rgb(139, 139, 139);
+}
+h1 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+p {
+  width: 40rem;
+  margin-bottom: 5rem;
+}
+.container {
+  display: grid;
+
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.container > ul > li {
+  margin: 2rem 0;
+  list-style: none;
+}
