@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "effcamp <fcf.camposx@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {}
 }
