@@ -4,5 +4,8 @@
   "main": "index.js",
   "author": "effcamp <fcf.camposx@gmail.com>",
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
