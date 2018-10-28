@@ -4,7 +4,7 @@ const app = new Vue({
   data: {
     hidden: false,
     scroll: null,
-    scrolled: 0
+    copyright: 2018
   },
   methods: {
     hideHeader() {

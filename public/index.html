@@ -40,7 +40,7 @@
       <button class="hideShow" v-if="hidden" @click="hideHeader">Show</button>
       <main>
         <section id="top">
-          <h1>Fred Campos</h1>
+          <h1 class="sectionHeading">Fred Campos</h1>
           <div>
 
             <h2>Developer</h2>
@@ -49,11 +49,10 @@
           </div>
         </section>
         <section id="about">
-          <h2>Staying current</h2>
-          <p>I am a developer in Canada who loves the web. Front-end and back-end are both my passions, and
-            I'll write
-            JavaScript
-            any day of the week. </p>
+          <h1 class="sectionHeading">About me</h1>
+          <p>I am a developer in Canada who loves the web. <br>
+            Front-end and back-end are both my passions. <br>
+            I'll write JavaScript any day of the week. </p>
           <div class="skills">
             <div>
               <h3>
@@ -94,7 +93,7 @@
           </div>
         </section>
         <section id="projects">
-          <h1>Selected Projects</h1>
+          <h1 class="sectionHeading">Selected Projects</h1>
           <div class="projects">
             <div class="project">
               <h2>
@@ -141,13 +140,13 @@
           </div>
         </section>
         <section id="contact">
-          <h1>Get in touch with me</h1>
+          <h1 class="sectionHeading">Get in touch with me</h1>
           <p>Connect with me on Linked in</p>
           <p>Check out my GitHub</p>
           <p>Contact me via email</p>
         </section>
       </main>
-      <footer></footer>
+      <footer>Copyright &copy; {{copyright}}</footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
