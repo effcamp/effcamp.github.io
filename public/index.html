@@ -18,7 +18,7 @@
     <div id="app">
       <header id="header" :class="{headerHide: hidden}">
         <nav>
-          <h1 class="logo">FC</h1>
+          <h1 class="logo"><a href="#top">FC</a></h1>
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -33,7 +33,7 @@
                 <i class=" fab fa-github"></i>
               </a>
             </li>
-            <li><a @click="hideHeader" href="#">hide</a> </li>
+            <li class="hideHeader" @click="hideHeader">hide</li>
           </ul>
         </nav>
       </header>
@@ -82,12 +82,13 @@
             </div>
             <div>
               <h3>
-                Other technologies
+                Other
               </h3>
               <ul>
                 <li>Python</li>
                 <li>Java</li>
                 <li>PHP</li>
+                <li>Linux</li>
               </ul>
             </div>
           </div>
@@ -99,36 +100,51 @@
               <h2>
                 Express Chat app using websockets
               </h2>
-
+              <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
+                  alt="express chat screenshot"></a>
+              <p>View details...</p>
+              <p></p>
             </div>
             <div class="project">
               <h2>
                 React Expense Managing app
               </h2>
-
+              <a href="https://expense-manager-react89.herokuapp.com/" target="_blank"><img src="./images/expensify.png"
+                  alt="react expense managing app screenshot"></a>
+              <p>View details...</p>
+              <p></p>
             </div>
             <div class="project">
               <h2>
                 React + Express Feedback Survey app
               </h2>
-
+              <a href="https://emaily-server-82651.herokuapp.com/" target="_blank"><img src="./images/emailr2.png" alt="express chat screenshot"></a>
+              <p>View details...</p>
+              <p></p>
             </div>
-            <div class="project">
+            <!-- <div class="project">
               <h2>
                 Vue Merch store
               </h2>
+              <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
+                  alt="express chat screenshot"></a>
 
             </div>
             <div class="project">
               <h2>
                 Vue Todo list with a twist
               </h2>
+              <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
+                  alt="express chat screenshot"></a>
 
-            </div>
+            </div> -->
           </div>
         </section>
         <section id="contact">
-
+          <h1>Get in touch with me</h1>
+          <p>Connect with me on Linked in</p>
+          <p>Check out my GitHub</p>
+          <p>Contact me via email</p>
         </section>
       </main>
       <footer></footer>
@@ -139,25 +155,3 @@
   </body>
 
 </html>
-
-
-<!-- <div class="container">
-  <h1>My Projects</h1>
-  <p>These are some of my projects. They are hosted on a free Heroku account so they take a couple of seconds to
-    start up.</p>
-  <ul>
-    <li>
-      <a href="https://node-chat-app-v1.herokuapp.com/">ExpressJS Chat app</a>
-    </li>
-    <li>
-      <a href="https://emaily-server-82651.herokuapp.com/">React + ExpressJS feedback survey app</a>
-    </li>
-    <li>
-      <a href="https://short-lnk-effcamp.herokuapp.com/">React + Meteor link shortening app</a>
-    </li>
-    <li>
-      <a href="https://expense-manager-react89.herokuapp.com/">React Expense manager app</a>
-    </li>
-  </ul>
-</div>
-<script src="test.js"></script> -->
