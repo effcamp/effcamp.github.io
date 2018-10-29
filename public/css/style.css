@@ -27,8 +27,7 @@ a:hover {
 h1 {
   font-family: "Bungee Shade", cursive;
   font-size: 3.5rem;
-  /* margin-top: 5rem;
-  margin-bottom: 2rem; */
+  line-height: 1rem;
 }
 /* p {
   max-width: 40rem;
@@ -50,67 +49,48 @@ h1 {
   /* padding: 1.5rem; */
   text-align: center;
 }
-.hideShow {
-  background: white;
-  border: none;
-  width: 5rem;
-  height: 3rem;
-  border-radius: 0.8rem;
-  position: fixed;
-  bottom: 2rem;
-  left: 2rem;
-  opacity: 0.5;
-  user-select: none;
-}
 header {
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  min-height: 100vh;
+  min-width: 100vw;
   background: white;
-  width: 80px;
   box-shadow: 7px 0px 9px 2px rgba(0, 0, 0, 0.75);
-  transition: left 250ms;
 }
 header > nav {
   background: rgb(54, 54, 54);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
+  min-width: 100vw;
+  padding: 0 2rem;
 }
 header h1 {
   align-self: center;
   margin: 0;
   padding: 0;
+  /* height: 0; */
 }
 header ul {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  /* border: 1px solid red; */
+  justify-content: space-between; /* border: 1px solid red; */
 }
-header li {
-  margin-top: 0.5rem;
+/* header li {
+} */
+header li a {
+  display: inline-block;
+  padding: 1.6rem 1rem; /* border: 1px solid black; */
 }
-header li a,
-.hideHeader {
-  display: block;
-  padding: 1.6rem 0.3rem; /* border: 1px solid black; */
-}
-.hideHeader {
-  cursor: pointer;
-  user-select: none;
+.fab {
+  font-size: 2.5rem;
 }
 main > section {
-  /* padding-top: 5rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .sectionHeading {
-  margin-bottom: 5rem;
+  margin: 9rem 0;
 }
 #top {
   min-height: 100vh;
@@ -164,21 +144,4 @@ div.projects {
 }
 #contact {
   height: 100vh;
-}
-@media screen and (max-width: 600px) {
-  .headerHide {
-    left: -90px;
-  }
-  .skills {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 600px) {
-  #app {
-    margin-left: 9rem;
-  }
-  .hideHeader {
-    display: none !important;
-  }
 }
