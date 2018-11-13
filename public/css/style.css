@@ -42,13 +42,14 @@ h1 {
   text-align: center;
 }
 .center {
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* height: 100%; */
 }
-header {
+/* header {
+  min-height: 5vh;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -78,8 +79,7 @@ header li a {
   display: inline-block;
   padding: 1.4rem 0.5rem;
   /* border: 1px solid black; */
-}
-
+/* } */
 .sectionHeading {
   margin-top: 2rem;
   text-align: center;
@@ -90,7 +90,7 @@ header li a {
 #contact {
   padding: 60px 10px;
   /* min-height: 100vh; */
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 .three-words {
   display: flex;
@@ -98,6 +98,8 @@ header li a {
 }
 .about-blurb {
   margin-top: 5rem;
+  line-height: 3rem;
+  text-align: center;
 }
 
 div.projects {
