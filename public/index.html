@@ -43,7 +43,7 @@
             <li><a href="#contact" @click="hideNav">Contact</a></li>
           </ul>
         </nav>
-        <label for="nav-toggle" class="nav-toggle-label"> <span></span> </label>
+        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
       </header>
 
       <main>
@@ -52,7 +52,6 @@
           <div class="three-words">
             <h2>Developer</h2>
             <h2>Teacher</h2>
-            <h2>Learner</h2>
           </div>
           <p class="about-blurb">
             A developer in Canada who loves the web. <br />
@@ -72,9 +71,9 @@
               v-for="project in projects"
               @click="showModal(project)"
             >
-              <a :href="project.url" target="_blank"
-                ><img :src="project.image" :alt="project.alt"
-              /></a>
+              <a :href="project.url" target="_blank">
+                <img :src="project.image" :alt="project.alt" />
+              </a>
 
               <div class="overlay" @click="showModal(project)">
                 <h2>{{ project.name }}</h2>
@@ -94,6 +93,7 @@
           <div class="modal-content">
             <h2 class="modal-title">{{ modal.name }}</h2>
             <img :src="modal.image" :alt="modal.alt" />
+            <h3 class="detail-title">Project Details:</h3>
             <ul>
               <li v-for="detail in modal.details">{{ detail }}</li>
             </ul>
@@ -111,34 +111,34 @@
         <section id="skills">
           <h1 class="sectionHeading">Knowledge and Skills</h1>
           <div class="skills">
-            <div>
+            <div class="card fe">
               <h3>Front-end</h3>
               <ul>
                 <li>Javascript (ES2015+)</li>
                 <li>Vue</li>
                 <li>React</li>
                 <li>HTML5</li>
-                <li>CSS + post processors (SCSS)</li>
+                <li>CSS / SCSS)</li>
               </ul>
             </div>
-            <div>
+            <div class="card be">
               <h3>Back-end</h3>
               <ul>
-                <li>NodeJS</li>
-                <li>Express</li>
-                <li>MongoDB + Mongoose</li>
+                <li>NodeJS / Express</li>
+                <li>MongoDB</li>
                 <li>Firebase</li>
                 <li>Authentication</li>
                 <li>Server Configuration</li>
               </ul>
             </div>
-            <div>
+            <div class="card other">
               <h3>Other</h3>
               <ul>
                 <li>Python</li>
                 <li>Java</li>
                 <li>PHP</li>
                 <li>Linux</li>
+                <li>Windows</li>
               </ul>
             </div>
           </div>
@@ -147,18 +147,36 @@
         <section id="contact">
           <h1 class="sectionHeading">Get in touch with me</h1>
           <div class="contact-links">
-            <p>Contact me via email (form here)</p>
-            <form action="" class="email-form">
-              <input type="text" class="input-name" placeholder="Name" />
-              <input type="text" class="input-email" placeholder="Email" />
+            <p>Contact me via email</p>
+            <form
+              action="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#102;&#x72;&#101;&#100;&#46;&#x73;&#x65;&#x6e;&#97;&#99;&#x61;&#x6d;&#112;&#111;&#115;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;"
+              class="email-form"
+              method="post"
+              enctype="text/plain"
+            >
+              <input
+                name="name"
+                type="text"
+                class="input-name"
+                placeholder="Name"
+                required
+              />
+              <input
+                name="email"
+                type="email"
+                class="input-email"
+                placeholder="Email"
+                required
+              />
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="30"
                 rows="10"
                 placeholder="Message"
+                required
               ></textarea>
-              <button class="button">Send Email</button>
+              <input class="button" type="submit" value="Send" />
             </form>
             <a
               href="https://github.com/effcamp"

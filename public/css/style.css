@@ -66,10 +66,10 @@ h1 {
   justify-content: space-evenly;
 }
 #top {
-  background: #368cbf;
+  /* background: #368cbf; */
 }
 #skills {
-  background: #7ebc59;
+  /* background: #7ebc59; */
 }
 #projects,
 #contact {
@@ -198,22 +198,28 @@ div.projects {
   bottom: 0.5rem;
 }
 
-#skills > * {
-  margin-top: 3rem;
-}
 .skills {
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
+  align-self: center;
+  /* margin: 1rem auto; */
+}
+.skills .card {
+  color: #c7c7c7;
   margin: 1rem;
-}
-.skills > div {
-  margin-top: 1rem;
   margin-bottom: 3rem;
-  /* min-width: 8rem; */
+  padding: 1rem;
+  width: 25rem;
+  background: #6e6868;
 }
-.skills li {
+.skills h3 {
+  margin: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.skills .card li {
+  background: #33363b;
+  border: 1px solid black;
   margin: 1rem 0;
+  padding: 2rem;
 }
 .social-icon {
   font-size: 4rem;
@@ -251,9 +257,20 @@ footer {
 
 @media screen and (min-width: 650px) {
   .skills {
-    flex-direction: row;
-    max-width: 800px;
+    /* flex-direction: row; */
+    max-width: 100rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-self: stretch;
+    align-self: center; */
+    /* margin: 0 auto; */
   }
+  /* .skills .card {
+    color: #eaeaea;
+    /* margin: 1rem; */
+  /* min-width: 30rem; */
+  /* max-width: 30rem; */
+
   .project-info-text {
     display: none;
   }

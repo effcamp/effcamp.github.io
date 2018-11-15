@@ -4,7 +4,14 @@ const projectData = [
     name: 'Vue Smoothie Maker App',
     url: 'https://smoothie.fredcampos.app',
     github: 'https://github.com/effcamp/smoothie-maker',
-    details: ['test', 'test', 'test', 'test', 'test', 'test'],
+    details: [
+      'VueJS',
+      'Vue Router',
+      'CRUD',
+      'Firebase',
+      'Materialize CSS',
+      'Netlify'
+    ],
     image: './images/smoothie.png',
     alt: 'Vue smoothie maker'
   },
@@ -13,7 +20,14 @@ const projectData = [
     name: 'Express Chat App Using Websockets',
     url: 'https://node-chat-app-v1.herokuapp.com/',
     github: 'https://github.com/effcamp/node-server-chat-app',
-    details: {},
+    details: [
+      'Express',
+      'HTML',
+      'CSS',
+      'Mocha tests',
+      'Geolocation',
+      'Websockets'
+    ],
     image: './images/express-chat.png',
     alt: 'Express Chat App using Websockets'
   },
@@ -22,7 +36,14 @@ const projectData = [
     name: 'React Expense Managing app',
     url: 'https://expense-manager-react89.herokuapp.com/',
     github: 'https://github.com/effcamp/react-expense-tracker',
-    details: {},
+    details: [
+      'ReactJS',
+      'Authentication',
+      'Redux',
+      'Router',
+      'Jest tests',
+      'Firebase'
+    ],
     image: './images/expensify.png',
     alt: 'React Expense Managing app'
   },
@@ -31,7 +52,14 @@ const projectData = [
     name: 'React + Express Feedback Survey app',
     url: 'https://emaily-server-82651.herokuapp.com/',
     github: 'https://github.com/effcamp/react-node-emailr-app',
-    details: {},
+    details: [
+      'React',
+      'Express',
+      'Authentication',
+      'Email list',
+      'Redux',
+      'Router'
+    ],
     image: './images/emailr.png',
     alt: 'React + Express Feedback Survey app'
   }
