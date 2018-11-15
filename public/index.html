@@ -29,7 +29,7 @@
   <body>
     <div id="app">
       <header id="header">
-        <h1 class="logo"><a href="#top"> Logo</a></h1>
+        <h1 class="logo"><a href="#top">FC</a></h1>
         <input
           type="checkbox"
           name="nav-toggle"
@@ -38,150 +38,134 @@
         />
         <nav>
           <ul>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects" @click="hideNav">Portfolio</a></li>
+            <li><a href="#skills" @click="hideNav">Skills</a></li>
+            <li><a href="#contact" @click="hideNav">Contact</a></li>
           </ul>
         </nav>
         <label for="nav-toggle" class="nav-toggle-label"> <span></span> </label>
       </header>
-      <!--
-        <header id="header">
-          <nav class="wrap">
-            <a href="#top" class="logo">FC</a>
-            <ul>
-              <li><a href="#projects">Portfolio</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </header>
-      -->
+
       <main>
         <section id="top">
           <h1 class="sectionHeading">Fred Campos</h1>
-          <div class="wrap center">
-            <div class="three-words">
-              <h2>Developer</h2>
-              <h2>Teacher</h2>
-              <h2>Learner</h2>
-            </div>
-            <p class="about-blurb">
-              A developer in Canada who loves the web. <br />
-              Passionate about both front-end and back-end. <br />
-              I'll write JavaScript any day of the week.
-            </p>
+          <div class="three-words">
+            <h2>Developer</h2>
+            <h2>Teacher</h2>
+            <h2>Learner</h2>
           </div>
+          <p class="about-blurb">
+            A developer in Canada who loves the web. <br />
+            Passionate about both front-end and back-end. <br />
+            I'll write JavaScript any day of the week.
+          </p>
         </section>
 
         <section id="projects">
           <h1 class="sectionHeading">Portfolio</h1>
-          <div class="wrap center">
-            <div class="projects">
-              <div class="project">
-                <h2>Express Chat app using websockets</h2>
-                <a
-                  href="https://node-chat-app-v1.herokuapp.com/"
-                  target="_blank"
-                  ><img
-                    src="./images/express-chat2.png"
-                    alt="express chat screenshot"
-                /></a>
+          <div class="projects">
+            <div class="project">
+              <h2>Express Chat app using websockets</h2>
+              <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"
+                ><img
+                  src="./images/express-chat2.png"
+                  alt="express chat screenshot"
+              /></a>
 
-                <p>View details...</p>
-                <p></p>
-              </div>
-              <div class="project">
-                <h2>React Expense Managing app</h2>
-                <a
-                  href="https://expense-manager-react89.herokuapp.com/"
-                  target="_blank"
-                  ><img
-                    src="./images/expensify.png"
-                    alt="react expense managing app screenshot"
-                /></a>
+              <p>View details...</p>
+              <p></p>
+            </div>
+            <div class="project">
+              <h2>React Expense Managing app</h2>
+              <a
+                href="https://expense-manager-react89.herokuapp.com/"
+                target="_blank"
+                ><img
+                  src="./images/expensify.png"
+                  alt="react expense managing app screenshot"
+              /></a>
 
-                <p>View details...</p>
-                <p></p>
-              </div>
-              <div class="project">
-                <h2>React + Express Feedback Survey app</h2>
-                <a
-                  href="https://emaily-server-82651.herokuapp.com/"
-                  target="_blank"
-                  ><img src="./images/emailr2.png" alt="express chat screenshot"
-                /></a>
-                <p>View details...</p>
-                <p></p>
-              </div>
-              <!--
-                <div class="project">
-                  <h2>
-                    Vue Merch store
-                  </h2>
-                  <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
-                      alt="express chat screenshot"></a>
-
-                </div>
-                <div class="project">
-                  <h2>
-                    Vue Todo list with a twist
-                  </h2>
-                  <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
-                      alt="express chat screenshot"></a>
-
-                </div>
-              -->
+              <p>View details...</p>
+              <p></p>
+            </div>
+            <div class="project">
+              <h2>React + Express Feedback Survey app</h2>
+              <a
+                href="https://emaily-server-82651.herokuapp.com/"
+                target="_blank"
+                ><img src="./images/emailr2.png" alt="express chat screenshot"
+              /></a>
+              <p>View details...</p>
+              <p></p>
             </div>
           </div>
         </section>
         <section id="skills">
           <h1 class="sectionHeading">Knowledge and Skills</h1>
-          <div class="wrap center">
-            <div class="skills">
-              <div>
-                <h3>Front-end</h3>
-                <ul>
-                  <li>Javascript (ES2015+)</li>
-                  <li>Vue</li>
-                  <li>React</li>
-                  <li>HTML5</li>
-                  <li>CSS + post processors (SCSS)</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Back-end</h3>
-                <ul>
-                  <li>NodeJS</li>
-                  <li>Express</li>
-                  <li>MongoDB + Mongoose</li>
-                  <li>Firebase</li>
-                  <li>Authentication</li>
-                  <li>Server Configuration</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Other</h3>
-                <ul>
-                  <li>Python</li>
-                  <li>Java</li>
-                  <li>PHP</li>
-                  <li>Linux</li>
-                </ul>
-              </div>
+          <div class="skills">
+            <div>
+              <h3>Front-end</h3>
+              <ul>
+                <li>Javascript (ES2015+)</li>
+                <li>Vue</li>
+                <li>React</li>
+                <li>HTML5</li>
+                <li>CSS + post processors (SCSS)</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Back-end</h3>
+              <ul>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>MongoDB + Mongoose</li>
+                <li>Firebase</li>
+                <li>Authentication</li>
+                <li>Server Configuration</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Other</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Linux</li>
+              </ul>
             </div>
           </div>
         </section>
+
         <section id="contact">
           <h1 class="sectionHeading">Get in touch with me</h1>
-          <div class="wrap center">
-            <a href="https://github.com/effcamp" target="_blank">
+          <div class="contact-links">
+            <p>Contact me via email (form here)</p>
+            <form action="" class="email-form">
+              <input type="text" class="input-name" placeholder="Name" />
+              <input type="text" class="input-email" placeholder="Email" />
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Message"
+              ></textarea>
+              <button class="button">Send Email</button>
+            </form>
+            <a
+              href="https://github.com/effcamp"
+              target="_blank"
+              class="social-icon"
+            >
               <i class=" fab fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/effscampos" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/effscampos"
+              target="_blank"
+              class="social-icon"
+            >
               <i class="fab fa-linkedin"></i>
             </a>
-            <p>Contact me via email</p>
           </div>
         </section>
       </main>
@@ -196,3 +180,22 @@
     <script src="./js/main.js"></script>
   </body>
 </html>
+
+<!--
+  <div class="project">
+    <h2>
+      Vue Merch store
+    </h2>
+    <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
+        alt="express chat screenshot"></a>
+
+  </div>
+  <div class="project">
+    <h2>
+      Vue Todo list with a twist
+    </h2>
+    <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"><img src="./images/express-chat2.png"
+        alt="express chat screenshot"></a>
+
+  </div>
+-->

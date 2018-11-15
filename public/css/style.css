@@ -4,6 +4,11 @@
 
 /* https://coolors.co/2d3047-93b7be-d7d9d7-c9c5cb-048a81 */
 
+/* #368cbf  - blue
+#7ebc59 -accent green
+#33363b dark slate
+#eaeaea light grey
+ */
 /* font-family: 'Lato', sans-serif; */
 
 *,
@@ -48,50 +53,36 @@ h1 {
   justify-content: center;
   /* height: 100%; */
 }
-/* header {
-  min-height: 5vh;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  box-shadow: 7px 0px 9px 2px rgba(0, 0, 0, 0.75);
-  background: rgb(54, 54, 54);
-}
-header > nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-}
 
-header ul {
-  display: flex;
-  justify-content: space-between;
-}
-.logo {
-  align-self: center;
-  font-size: 2.8rem;
-  font-family: 'Montserrat', 'sans-serif';
-  font-weight: 700;
-}
-header li a {
-  display: inline-block;
-  padding: 1.4rem 0.5rem;
-  /* border: 1px solid black; */
-/* } */
 .sectionHeading {
   margin-top: 2rem;
+  margin-bottom: 8rem;
   text-align: center;
+  font-size: 5rem;
 }
 #top,
 #projects,
 #skills,
 #contact {
   padding: 60px 10px;
-  /* min-height: 100vh; */
-  border: 1px solid black;
+  text-align: center;
+  min-height: 100vh;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+#top {
+  background: #368cbf;
+}
+#skills {
+  background: #7ebc59;
+}
+#projects,
+#contact {
+  background: #eaeaea;
+}
+
 .three-words {
   display: flex;
   justify-content: space-evenly;
@@ -104,16 +95,16 @@ header li a {
 
 div.projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-columns: repeat(auto-fill, 400px);
   grid-template-rows: auto;
   justify-content: center;
   grid-gap: 1rem;
 }
 .project {
-  height: 40rem;
-  width: 30rem;
-  background: rgb(54, 54, 54);
-  /* box-shadow: 1px 0px 1px 2px rgba(255, 255, 255, 0.25); */
+  height: 30rem;
+  width: 40rem;
+  /* background: #7ebc59; */
+  box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.75);
 }
 .project h2 {
   margin: 1rem 0;
@@ -131,12 +122,54 @@ div.projects {
 .skills {
   justify-content: space-between;
   display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 .skills > div {
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
   /* min-width: 8rem; */
 }
 .skills li {
   margin: 1rem 0;
+}
+.social-icon {
+  font-size: 4rem;
+}
+.social-icon:hover {
+  color: black;
+}
+.email-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 1rem auto;
+}
+.email-form > * {
+  padding: 1rem;
+  margin: 0.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8rem;
+}
+.email-form .button {
+  background: #33363b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 12rem;
+  height: 5rem;
+  align-self: flex-end;
+}
+
+footer {
+  background: #33363b;
+  color: #eaeaea;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 550px) {
+  .skills {
+    flex-direction: row;
+    max-width: 800px;
+  }
 }

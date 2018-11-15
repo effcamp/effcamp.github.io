@@ -1,12 +1,15 @@
 // console.log("this is a test")
 const app = new Vue({
-  el: "#app",
+  el: '#app',
   data: {
     hidden: false,
     scroll: null,
     copyright: 2018
   },
   methods: {
+    hideNav() {
+      document.getElementById('nav-toggle').checked = false;
+    },
     hideHeader() {
       this.hidden = !this.hidden;
       this.scroll = window.scrollY;
@@ -16,9 +19,9 @@ const app = new Vue({
     }
   },
   created() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 });
