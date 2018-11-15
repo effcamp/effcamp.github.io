@@ -4,7 +4,7 @@ const projectData = [
     name: 'Vue Smoothie Maker App',
     url: 'https://smoothie.fredcampos.app',
     github: 'https://github.com/effcamp/smoothie-maker',
-    details: ['test'],
+    details: ['test', 'test', 'test', 'test', 'test', 'test'],
     image: './images/smoothie.png',
     alt: 'Vue smoothie maker'
   },

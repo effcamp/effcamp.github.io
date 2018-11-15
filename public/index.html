@@ -84,20 +84,22 @@
           </div>
         </section>
         <!-- modal -->
-        <div class="modal" v-if="visible" @click="hideModal">
-          <div class="close-modal" @click="hideModal">X</div>
+        <div class="modal" v-if="visible" @click="clickHideModal">
+          <div class="close-modal" @click="hideModal()">X</div>
           <div class="modal-content">
             <h2 class="modal-title">{{ modal.name }}</h2>
             <img :src="modal.image" :alt="modal.alt" />
             <ul>
               <li v-for="detail in modal.details">{{ detail }}</li>
             </ul>
-            <a :href="modal.github" class="button github" target="_blank">
-              Github
-            </a>
-            <a :href="modal.url" class="button link" target="_blank">
-              Go to app
-            </a>
+            <div class="links">
+              <a :href="modal.github" class="button github" target="_blank">
+                Github
+              </a>
+              <a :href="modal.url" class="button link" target="_blank">
+                Go to app
+              </a>
+            </div>
           </div>
         </div>
         <!-- end modal -->

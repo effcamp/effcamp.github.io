@@ -40,11 +40,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 3.5rem;
 }
-.button {
-  background: #eaeaea;
-  padding: 2rem 3rem;
-  margin-top: 5rem;
-}
+
 .wrap {
   max-width: 950px;
   margin: 0 auto;
@@ -160,17 +156,41 @@ div.projects {
   place-content: center;
 }
 .modal-content {
+  background-color: #eaeaea;
+  position: relative;
   margin: auto;
   height: 85vh;
   width: 90vw;
   border-radius: 1rem;
-  background-color: white;
   justify-items: center;
   text-align: center;
+}
+.modal-content h2 {
+  margin: 2rem 0;
 }
 .modal-content img {
   width: 80%;
   border: 1px solid black;
+}
+.modal-content ul {
+  display: block;
+  margin-bottom: 3rem;
+}
+.modal .button {
+  background: #33363b;
+  padding: 1.6rem 3.5rem;
+  margin: 0 1rem;
+  font-size: 2rem;
+}
+.modal .button:hover {
+  color: black;
+}
+.modal .links {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0.5rem;
 }
 
 #skills > * {

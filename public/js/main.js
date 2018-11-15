@@ -21,6 +21,12 @@ const app = new Vue({
         ...project
       };
     },
+    clickHideModal(e) {
+      if (e.target.className === 'modal') {
+        this.visible = false;
+        this.modal = {};
+      }
+    },
     hideModal() {
       this.visible = false;
       this.modal = {};
