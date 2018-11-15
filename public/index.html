@@ -63,43 +63,44 @@
 
         <section id="projects">
           <h1 class="sectionHeading">Portfolio</h1>
+          <h3 class="project-info-text">
+            Click to view info about each project
+          </h3>
           <div class="projects">
-            <div class="project">
-              <h2>Express Chat app using websockets</h2>
-              <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"
-                ><img
-                  src="./images/express-chat2.png"
-                  alt="express chat screenshot"
+            <div
+              class="project"
+              v-for="project in projects"
+              @click="showModal(project)"
+            >
+              <a :href="project.url" target="_blank"
+                ><img :src="project.image" :alt="project.alt"
               /></a>
 
-              <p>View details...</p>
-              <p></p>
-            </div>
-            <div class="project">
-              <h2>React Expense Managing app</h2>
-              <a
-                href="https://expense-manager-react89.herokuapp.com/"
-                target="_blank"
-                ><img
-                  src="./images/expensify.png"
-                  alt="react expense managing app screenshot"
-              /></a>
-
-              <p>View details...</p>
-              <p></p>
-            </div>
-            <div class="project">
-              <h2>React + Express Feedback Survey app</h2>
-              <a
-                href="https://emaily-server-82651.herokuapp.com/"
-                target="_blank"
-                ><img src="./images/emailr2.png" alt="express chat screenshot"
-              /></a>
-              <p>View details...</p>
-              <p></p>
+              <div class="overlay" @click="showModal(project)">
+                <h2>{{ project.name }}</h2>
+                <p class="overlay-text">Click to view details</p>
+              </div>
             </div>
           </div>
         </section>
+        <!-- modal -->
+        <div class="modal" v-if="visible" @click="hideModal">
+          <div class="close-modal" @click="hideModal">X</div>
+          <div class="modal-content">
+            <h2 class="modal-title">{{ modal.name }}</h2>
+            <img :src="modal.image" :alt="modal.alt" />
+            <ul>
+              <li v-for="detail in modal.details">{{ detail }}</li>
+            </ul>
+            <a :href="modal.github" class="button github" target="_blank">
+              Github
+            </a>
+            <a :href="modal.url" class="button link" target="_blank">
+              Go to app
+            </a>
+          </div>
+        </div>
+        <!-- end modal -->
         <section id="skills">
           <h1 class="sectionHeading">Knowledge and Skills</h1>
           <div class="skills">
@@ -177,9 +178,49 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="./js/projects.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
+
+<!--
+  <div class="project">
+    <a href="https://node-chat-app-v1.herokuapp.com/" target="_blank"
+      ><img
+        src="./images/express-chat2.png"
+        alt="express chat screenshot"
+    /></a>
+
+    <div class="overlay">
+      <h2>Express Chat app using websockets</h2>
+      <p class="overlay-text">Click to view details</p>
+    </div>
+  </div>
+  <div class="project">
+    <a
+      href="https://expense-manager-react89.herokuapp.com/"
+      target="_blank"
+      ><img
+        src="./images/expensify.png"
+        alt="react expense managing app screenshot"
+    /></a>
+    <div class="overlay">
+      <h2>React Expense Managing app</h2>
+      <p class="overlay-text">Click to view details</p>
+    </div>
+  </div>
+  <div class="project">
+    <a
+      href="https://emaily-server-82651.herokuapp.com/"
+      target="_blank"
+      ><img src="./images/emailr2.png" alt="express chat screenshot"
+    /></a>
+    <div class="overlay">
+      <h2>React + Express Feedback Survey app</h2>
+      <p class="overlay-text">Click to view details</p>
+    </div>
+  </div>
+-->
 
 <!--
   <div class="project">
