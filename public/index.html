@@ -84,7 +84,12 @@
           </div>
         </section>
         <!-- modal -->
-        <div class="modal" v-if="visible" @click="clickHideModal">
+        <div
+          class="modal"
+          v-if="visible"
+          @click="clickHideModal"
+          @touchmove="preventMoveTouch"
+        >
           <div class="close-modal" @click="hideModal()">X</div>
           <div class="modal-content">
             <h2 class="modal-title">{{ modal.name }}</h2>

@@ -30,6 +30,19 @@ const app = new Vue({
     hideModal() {
       this.visible = false;
       this.modal = {};
+    },
+    preventMoveTouch(e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  },
+  watch: {
+    visible: vis => {
+      if (vis === true) {
+        document.documentElement.style.overflow = 'hidden';
+      } else {
+        document.documentElement.style.overflow = 'auto';
+      }
     }
   },
   created() {
@@ -38,6 +51,9 @@ const app = new Vue({
         this.hideModal();
       }
     });
+  },
+  destroyed() {
+    window.removeEventListener('keydown');
   }
 });
 // created() {

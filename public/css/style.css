@@ -88,13 +88,13 @@ h1 {
 
 div.projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 40rem);
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 35rem));
   justify-content: center;
   grid-gap: 1rem;
 }
 .project {
   height: 25rem;
-  width: 40rem;
+  max-width: 100%;
   /* background-color: #7ebc59; */
   box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.75);
   position: relative;
@@ -149,7 +149,9 @@ div.projects {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
   width: 100%;
   background-color: rgba(51, 54, 59, 0.829);
   display: grid;
@@ -161,6 +163,8 @@ div.projects {
   margin: auto;
   height: 85vh;
   width: 90vw;
+
+  max-width: 55rem;
   border-radius: 1rem;
   justify-items: center;
   text-align: center;
@@ -179,8 +183,9 @@ div.projects {
 .modal .button {
   background: #33363b;
   padding: 1.6rem 3.5rem;
-  margin: 0 1rem;
-  font-size: 2rem;
+  margin: 0 0.7rem;
+  font-size: 1.8rem;
+  overflow: hidden;
 }
 .modal .button:hover {
   color: black;
