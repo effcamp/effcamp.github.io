@@ -27,7 +27,8 @@ const projectData = [
       'CRUD',
       'Firebase',
       'Materialize CSS',
-      'Netlify'
+      'Netlify',
+      'Hosted on Heroku; Takes some seconds for it to boot up.'
     ],
     image: './images/smoothie.png',
     alt: 'Vue smoothie maker'
@@ -43,7 +44,8 @@ const projectData = [
       'CSS',
       'Mocha tests',
       'Geolocation',
-      'Websockets'
+      'Websockets',
+      'Hosted on Heroku; Takes some seconds for it to boot up.'
     ],
     image: './images/express-chat.png',
     alt: 'Express Chat App using Websockets'
@@ -59,7 +61,8 @@ const projectData = [
       'Redux',
       'Router',
       'Jest tests',
-      'Firebase'
+      'Firebase',
+      'Hosted on Heroku; Takes some seconds for it to boot up.'
     ],
     image: './images/expensify.png',
     alt: 'React Expense Managing app'
@@ -75,7 +78,8 @@ const projectData = [
       'Authentication',
       'Email list',
       'Redux',
-      'Router'
+      'Router',
+      'Hosted on Heroku; Takes some seconds for it to boot up.'
     ],
     image: './images/emailr.png',
     alt: 'React + Express Feedback Survey app'
