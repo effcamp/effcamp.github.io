@@ -65,12 +65,7 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
 }
-#top {
-  /* background: #368cbf; */
-}
-#skills {
-  /* background: #7ebc59; */
-}
+
 #projects,
 #contact {
   background: #eaeaea;

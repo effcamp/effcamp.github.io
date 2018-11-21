@@ -1,5 +1,22 @@
 const projectData = [
   {
+    id: 5,
+    name: 'Tic Tac Totes',
+    url: 'https://tic.fredcampos.me',
+    github: 'https://github.com/effcamp/tictactotes',
+    details: [
+      'Vanilla JS',
+      'HTML/CSS',
+      'Webpack from scratch! ',
+      'Firebase/Firestore realtime database',
+      'Online game',
+      'Netlify',
+      'TODO: Fix UI/Add loading spinner/Refactor (a few times).'
+    ],
+    image: './images/tictac.png',
+    alt: 'Tic Tac Totes game'
+  },
+  {
     id: 1,
     name: 'Vue Smoothie Maker App',
     url: 'https://smoothie.fredcampos.app',
