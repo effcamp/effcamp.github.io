@@ -27,8 +27,7 @@ const projectData = [
       'CRUD',
       'Firebase',
       'Materialize CSS',
-      'Netlify',
-      'Hosted on Heroku; Takes some seconds for it to boot up.'
+      'Netlify'
     ],
     image: './images/smoothie.png',
     alt: 'Vue smoothie maker'
