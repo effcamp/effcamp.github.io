@@ -216,6 +216,14 @@ div.projects {
   margin: 1rem 0;
   padding: 2rem;
 }
+
+.resume-DL {
+  padding: 10px 20px;
+  background: linear-gradient(to bottom left, #33363b, #6e6868);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 .social-icon {
   font-size: 4rem;
 }
