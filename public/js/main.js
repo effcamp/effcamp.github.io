@@ -1,6 +1,6 @@
 // console.log("this is a test")
 const app = new Vue({
-  el: '#app',
+  el: "#app",
   data: {
     hidden: false,
     scroll: null,
@@ -12,7 +12,7 @@ const app = new Vue({
   },
   methods: {
     hideNav() {
-      document.getElementById('nav-toggle').checked = false;
+      document.getElementById("nav-toggle").checked = false;
     },
     showModal(project) {
       this.visible = true;
@@ -22,7 +22,7 @@ const app = new Vue({
       };
     },
     clickHideModal(e) {
-      if (e.target.className === 'modal') {
+      if (e.target.className === "modal") {
         this.visible = false;
         this.modal = {};
       }
@@ -39,21 +39,21 @@ const app = new Vue({
   watch: {
     visible: vis => {
       if (vis === true) {
-        document.documentElement.style.overflow = 'hidden';
+        document.documentElement.style.overflow = "hidden";
       } else {
-        document.documentElement.style.overflow = 'auto';
+        document.documentElement.style.overflow = "auto";
       }
     }
   },
   created() {
-    window.addEventListener('keydown', e => {
-      if (e.key === 'Escape') {
+    window.addEventListener("keydown", e => {
+      if (e.key === "Escape") {
         this.hideModal();
       }
     });
   },
   destroyed() {
-    window.removeEventListener('keydown');
+    window.removeEventListener("keydown");
   }
 });
 // created() {
