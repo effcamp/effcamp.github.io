@@ -1,32 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="./images/logo/logo-fav.png"
-    />
+    <link rel="shortcut icon" type="image/png"
+          href="./images/logo/logo-fav.png" />
     <title>Fred Campos</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+          rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+          rel="stylesheet" type="text/css" />
 
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+          crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
   </head>
@@ -35,20 +26,23 @@
     <div id="app">
       <header id="header">
         <h1 class="logo"><a href="#top">FC</a></h1>
-        <input
-          type="checkbox"
-          name="nav-toggle"
-          id="nav-toggle"
-          class="nav-toggle"
-        />
+        <input type="checkbox" name="nav-toggle" id="nav-toggle"
+               class="nav-toggle" />
         <nav>
           <ul>
-            <li><a href="#projects" @click="hideNav">Portfolio</a></li>
-            <li><a href="#skills" @click="hideNav">Skills</a></li>
-            <li><a href="#contact" @click="hideNav">Contact</a></li>
+            <li> <a href="assets/ResumeT.pdf" download
+                 class="resume-DL">Download Resume</a></li>
+            <li><a href="#projects" @click="hideNav"
+                 class="top-line">Portfolio</a>
+            </li>
+            <li><a href="#skills" @click="hideNav"
+                 class="top-line">Skills</a></li>
+            <li><a href="#contact" @click="hideNav"
+                 class="top-line">Contact</a></li>
           </ul>
         </nav>
-        <label for="nav-toggle" class="nav-toggle-label"><span></span></label>
+        <label for="nav-toggle"
+               class="nav-toggle-label"><span></span></label>
       </header>
 
       <main>
@@ -72,11 +66,8 @@
             Click to view info about each project
           </h3>
           <div class="projects">
-            <div
-              class="project"
-              v-for="project in projects"
-              @click="showModal(project)"
-            >
+            <div class="project" v-for="project in projects"
+                 @click="showModal(project)">
               <a :href="project.url" target="_blank">
                 <img :src="project.image" :alt="project.alt" />
               </a>
@@ -89,12 +80,8 @@
           </div>
         </section>
         <!-- modal -->
-        <div
-          class="modal"
-          v-if="visible"
-          @click="clickHideModal"
-          @touchmove="preventMoveTouch"
-        >
+        <div class="modal" v-if="visible" @click="clickHideModal"
+             @touchmove="preventMoveTouch">
           <div class="close-modal" @click="hideModal()">X</div>
           <div class="modal-content">
             <h2 class="modal-title">{{ modal.name }}</h2>
@@ -104,10 +91,12 @@
               <li v-for="detail in modal.details">{{ detail }}</li>
             </ul>
             <div class="links">
-              <a :href="modal.github" class="button github" target="_blank">
+              <a :href="modal.github" class="button github"
+                 target="_blank">
                 Github
               </a>
-              <a :href="modal.url" class="button link" target="_blank">
+              <a :href="modal.url" class="button link"
+                 target="_blank">
                 Go to app
               </a>
             </div>
@@ -149,9 +138,8 @@
             </div>
           </div>
           <div>
-            <a href="assets/ResumeT.pdf" download class="resume-DL"
-              >Download Resume</a
-            >
+            <a href="assets/ResumeT.pdf" download
+               class="resume-DL">Download Resume</a>
           </div>
         </section>
 
@@ -159,48 +147,23 @@
           <h1 class="sectionHeading">Get in touch with me</h1>
           <div class="contact-links">
             <p>Contact me via email</p>
-            <form
-              action="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#102;&#x72;&#101;&#100;&#46;&#x73;&#x65;&#x6e;&#97;&#99;&#x61;&#x6d;&#112;&#111;&#115;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;"
-              class="email-form"
-              method="post"
-              enctype="text/plain"
-            >
-              <input
-                name="name"
-                type="text"
-                class="input-name"
-                placeholder="Name"
-                required
-              />
-              <input
-                name="email"
-                type="email"
-                class="input-email"
-                placeholder="Email"
-                required
-              />
-              <textarea
-                name="message"
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                required
-              ></textarea>
+            <form action="&#x6d;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#102;&#x72;&#101;&#100;&#46;&#x73;&#x65;&#x6e;&#97;&#99;&#x61;&#x6d;&#112;&#111;&#115;&#x40;&#103;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#111;&#x6d;"
+                  class="email-form" method="post"
+                  enctype="text/plain">
+              <input name="name" type="text" class="input-name"
+                     placeholder="Name" required />
+              <input name="email" type="email" class="input-email"
+                     placeholder="Email" required />
+              <textarea name="message" id="" cols="30" rows="10"
+                        placeholder="Message" required></textarea>
               <input class="button" type="submit" value="Send" />
             </form>
-            <a
-              href="https://github.com/effcamp"
-              target="_blank"
-              class="social-icon"
-            >
+            <a href="https://github.com/effcamp" target="_blank"
+               class="social-icon">
               <i class=" fab fa-github"></i>
             </a>
-            <a
-              href="https://www.linkedin.com/in/effscampos"
-              target="_blank"
-              class="social-icon"
-            >
+            <a href="https://www.linkedin.com/in/effscampos"
+               target="_blank" class="social-icon">
               <i class="fab fa-linkedin"></i>
             </a>
           </div>
@@ -214,10 +177,12 @@
       </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script
+            src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
     <script src="./js/projects.js"></script>
     <script src="./js/main.js"></script>
   </body>
+
 </html>
 
 <!--

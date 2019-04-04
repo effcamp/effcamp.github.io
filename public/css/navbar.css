@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 
 :root {
   --background: #33363b;
@@ -43,7 +43,7 @@ header {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 .nav-toggle-label span::before {
@@ -136,8 +136,8 @@ nav a:hover {
     padding: 24px 16px;
   }
 
-  nav a::before {
-    content: '';
+  .top-line::before {
+    content: "";
     display: block;
     height: 5px;
     background: black;
@@ -148,7 +148,7 @@ nav a:hover {
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
   }
-  nav a:hover::before {
+  .top-line:hover::before {
     transform: scale(1, 1);
   }
 }
